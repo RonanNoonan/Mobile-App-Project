@@ -1,0 +1,80 @@
+
+ion-toolbar{
+    color: black;
+    ion-title{
+        color: blue;
+      }
+  }
+  
+  
+  //creates space at the side of first segment
+  ion-segment{
+    margin:0 10px;
+  }
+  
+  //first segment 
+  ion-segment-button{
+    text-transform: capitalize;
+    transform: scale(0.9,0.9);
+    --indicator-color:transparent;
+    color:black;
+    font-weight: bold;
+  
+    ion-label{
+      position: relative;
+      left: -17px;
+      font-weight: bolder;
+    }
+  }
+  
+  .segment-button-checked{
+    color: red;
+  }
+  
+  ion-badge{
+    padding: 10px 0;
+    border-radius: 20px;
+    color: rgb(160, 160, 160);
+    border: 1px solid rgb(160, 160, 160);
+    width: 120%;
+    text-align: center;
+  }
+  
+  //lines up picture
+  .poster-col{
+    height: 350px;
+    img{
+      border-radius: 44px;
+    }
+  }
+  
+  .rate{
+    font-size: 14px;
+    padding-top: 4px;
+  
+    ion-icon{
+      color: yellow;//star
+    }
+  }
+  
+  //Movie titles
+  h6{
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  
+  //rotates when swiped right
+  .swiper-slide-prev{
+    opacity: .5;
+    transform: rotate(-8deg);
+  }
+  
+  //rotates when swiped left
+  .swiper-slide-next{
+    opacity: .5;
+    transform: rotate(8deg);
+  }
+  
+  
+  
+  

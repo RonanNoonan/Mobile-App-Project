@@ -1,0 +1,97 @@
+<ion-header [translucent]="true" class="ion-no-border"><!--Gets rid of the boorder-->
+  <ion-toolbar>
+    <ion-icon name='arrow-forward'></ion-icon>
+    <ion-title align="center">Tv Shows</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-segment scrollable value="1">
+    <ion-segment-button [routerLink]="['/latest']">
+      <ion-label>Latest</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/movies']">
+      <ion-label>Movies</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/tvshows']">
+      <ion-label>TV shows</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/cinema']">
+      <ion-label>Cinema</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/coming']">
+      <ion-label>Coming Soon</ion-label>
+    </ion-segment-button>
+  </ion-segment>  
+
+  
+
+  <!--Creating images in slides-->
+  <ion-slides [options]="options">
+
+   <ion-slide>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="poster-col">
+           <img class="poster" src="https://cdn.europosters.eu/image/350/posters/star-wars-the-mandalorian-nightfall-i103406.jpg" alt="">
+         </ion-col>
+         <ion-col size="12">
+           <h6 class="ion-no-margin">The Mandalorian</h6>
+           <p class="ion-no-margin rate"><ion-icon name="star"></ion-icon>3.9</p><!--rating-->
+         </ion-col>
+       </ion-row>
+     </ion-grid>
+  </ion-slide>
+  
+
+<ion-slide>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="poster-col">
+        <img class="poster" src="https://kettlefirecreative.com/wp-content/uploads/2020/06/altered-carbon.jpg?88b6f1&88b6f1" alt="">
+      </ion-col>
+      <ion-col size="12">
+        <h6 class="ion-no-margin">Altered Carbon</h6>
+        <p class="ion-no-margin rate"><ion-icon name="star"></ion-icon>2.8</p><!--rating-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-slide>
+
+
+<ion-slide>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="poster-col">
+        <img class="poster" src="https://cdn.europosters.eu/image/350/posters/stranger-things-summer-of-85-i76122.jpg" alt="">
+      </ion-col>
+      <ion-col size="12">
+        <h6 class="ion-no-margin">Stranger Things</h6>
+        <p class="ion-no-margin rate"><ion-icon name="star"></ion-icon>4.7</p><!--rating-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-slide>
+
+<ion-slide>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="poster-col">
+        <img class="poster" src="https://cdn.shopify.com/sfiles107473829productsmL2429_1024x1024.jpg?v=1571445543" alt="">
+      </ion-col>
+      <ion-col size="12">
+        <h6 class="ion-no-margin">Billions</h6>
+        <p class="ion-no-margin rate"><ion-icon name="star">3.4</ion-icon>4</p><!--rating-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-slide>
+
+
+
+</ion-slides>
+
+  
+
+</ion-content>

@@ -1,0 +1,97 @@
+<ion-header [translucent]="true" class="ion-no-border"><!--Gets rid of the boorder-->
+  <ion-toolbar>
+    <ion-icon name='arrow-forward'></ion-icon>
+    <ion-title align="center">Movies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-segment scrollable value="1">
+    <ion-segment-button [routerLink]="['/latest']">
+      <ion-label>Latest</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/movies']">
+      <ion-label>Movies</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/tvshows']">
+      <ion-label>TV shows</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/Cinema']">
+      <ion-label>Cinema</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [routerLink]="['/coming']">
+      <ion-label>Coming Soon</ion-label>
+    </ion-segment-button>
+  </ion-segment>  
+
+  
+
+  <!--Creating images in slides-->
+  <ion-slides [options]="options">
+
+   <ion-slide>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="poster-col">
+           <img class="poster" src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/2eae1b7041a8/sub-buzz-2749-1603833440-24.jpg" alt="">
+         </ion-col>
+         <ion-col size="12">
+           <h6 class="ion-no-margin">X Men: Dark Phonix</h6>
+           <p class="ion-no-margin rate"><ion-icon name="star"></ion-icon>3.5</p><!--rating-->
+         </ion-col>
+       </ion-row>
+     </ion-grid>
+  </ion-slide>
+  
+
+<ion-slide>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="poster-col">
+        <img class="poster" src="https://6a25bbd04bd33b8a843e-9626a8b6c7858057941524bfdad5f5b0.ssl.cf5.rackcdn.com/styles/art/rcf/121721_SNWH027DOM_Exclusive_Art_DR_ENG_1080x1600_V1_R2_1.jpg?itok=_Lp0P3M_" alt="">
+      </ion-col>
+      <ion-col size="12">
+        <h6 class="ion-no-margin">Spider Man: No Way Home</h6>
+        <p class="ion-no-margin rate"><ion-icon name="star"></ion-icon>4.8</p><!--rating-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-slide>
+
+
+<ion-slide>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="poster-col">
+        <img class="poster" src="https://media1.popsugar-assets.com/files/thumbor/z5oKgNC9S4DS6Bay78Aoy5aLO4s/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2017/01/26/813/n/1922283/055dc333c3280d59_BeautyAndTheBeast58726d5b9fac8/i/Beauty-Beast-2017-Movie-Posters.jpg" alt="">
+      </ion-col>
+      <ion-col size="12">
+        <h6 class="ion-no-margin">Beauty and the Beast</h6>
+        <p class="ion-no-margin rate"><ion-icon name="star"></ion-icon>3.8</p><!--rating-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-slide>
+
+<ion-slide>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="poster-col">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMDkzNmRhNTMtZDI4NC00Zjg1LTgxM2QtMjYxZDQ3OWJlMDRlXkEyXkFqcGdeQXVyNTU5MjkzMTU@._V1_FMjpg_UX1000_.jpg" alt="">
+      </ion-col>
+      <ion-col size="12">
+        <h6 class="ion-no-margin">DeadPool 2</h6>
+        <p class="ion-no-margin rate"><ion-icon name="star"></ion-icon>4</p><!--rating-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-slide>
+
+
+
+</ion-slides>
+
+  
+
+</ion-content>
